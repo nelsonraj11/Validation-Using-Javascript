@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 
@@ -8,48 +9,46 @@
 				<link rel="stylesheet" type="text/css" href="css/style.css">
 					<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 						<script src="js/script.js"></script>
-</head>
+	</head>
+
 <body >
 
 <div class="wholePart">
 
-  <form action="" name="myForm"  method="post" onsubmit=" return validate() ">
-  <h1> Registration Form</h1>
-    <label form="fname">First Name</label><br>
-    	<input type="text" name="fname" onkeypress="ffunction()" onkeyup="f2function()" placeholder="Your name..">
-    	<div id="errorfirstname"></div>
+ 	<form action="" name="myForm"  method="post" onsubmit=" return validate() ">
+  		<h1> Registration Form</h1>
+
+    		<label form="fname">First Name</label><br>
+    		<input type="text" name="fname" onkeypress="ffunction()" onkeyup="f2function()" placeholder="Your name..">
+    		<div id="errorfirstname"></div>
     	
 
-    <label for="lname">Last Name</label><br>
-    	<input type="text"  name="lname" onkeypress="lfunction()" onkeyup="l2function()"  placeholder="Your last name..">
-    	<div id="errorlastname"></div>
+    		<label for="lname">Last Name</label><br>
+    		<input type="text"  name="lname" onkeypress="lfunction()" onkeyup="l2function()"  placeholder="Your last name..">
+    		<div id="errorlastname"></div>
 
-    <label for="email">EMail</label><br>
-    	<input type="text" name="email" onkeypress="efunction()" onchange ="e2function()" id ="txtmail" placeholder="EMail.."> 
-    	<div id="erroremail"></div> 
+   			<label for="email">EMail</label><br>
+    		<input type="text" name="email" onkeypress="efunction()" onchange ="e2function()" id ="txtmail" placeholder="EMail.."> 
+    		<div id="erroremail"></div> 
 
-    <label for="mnumber">Mobile Number</label><br>
-    	<input type="code" name="" value="+91" disabled>
-    	<input type="mnumber" name="mnumber" onkeypress="mfunction()" onchange="m2function()"  value="" id="mnumber" placeholder="Enter your Mobile Number..">
-    	<div id="errormobilenumber"></div>
+    		<label for="mnumber">Mobile Number</label><br>
+    		<input type="code" name="" value="+91" disabled>
+    		<input type="mnumber" name="mnumber" onkeypress="mfunction()" onchange="m2function()"  value="" id="mnumber" placeholder="Enter your Mobile Number..">
+    		<div id="errormobilenumber"></div>
 
-    <label for="password">Password</label><br>
-    	<input type="password" id ="password" name="password" onkeypress="pfunction()" onchange="p2function()" >
-    	<div id="errorpassword"></div>
+   			<label for="password">Password</label><br>
+    		<input type="password" id ="password" name="password" onkeypress="pfunction()" onchange="p2function()" >
+    		<div id="errorpassword"></div>
 
- 	<label for="confirmpassword">Confirm Password</label><br>
-    	<input type="password" id ="confirmpassword" name="confirmpassword" onkeypress="cpfunction()" on="cp2function()" >
-    	<div id="errorconfirmpassword"></div>
-    
+ 			<label for="confirmpassword">Confirm Password</label><br>
+    		<input type="password" id ="confirmpassword" name="confirmpassword" onkeypress="cpfunction()" on="cp2function()" >
+    		<div id="errorconfirmpassword"></div>
+   
+    		<input type="submit" value="Submit" >
+    		<input type="Reset" value="Reset" onclick="reloadFunction()">
 
+	</form>
 	
-  
-    <input type="submit" value="Submit" >
-    <input type="Reset" value="Reset" onclick="reloadFunction()">
-
-
-
-  </form>
 </div>
 
 </body>
